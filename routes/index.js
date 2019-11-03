@@ -3,8 +3,7 @@ var router = express.Router();
 var page = {
 	index: {
 		title: 'JDMS'
-	},
-	
+	}
 }
 
 /* GET home page. */

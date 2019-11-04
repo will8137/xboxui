@@ -1,11 +1,10 @@
 <html lang="en" class="no-js">
 <!--<![endif]-->
-
 <head>
     <link href="https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{title}}</title>
+    <title>JDMS</title>
     <meta name="description" content="James data media server with Xbox 360 UI vy James Data">
     <link rel="stylesheet" href="stylesheets/style.css">
     <meta content="width=device-width, target-densitydpi=160, initial-scale=1.0" name="viewport">
@@ -35,14 +34,9 @@
         <header>
             <nav id="global-nav">
                 <ul class="global-nav-list">
-                    <li class="global-nav-list-item"><a href="#bing" class="global-nav-list-item-link">bing</a></li>
-                    <li class="global-nav-list-item"><a href="#home" class="global-nav-list-item-link -active">home</a></li>
-                    <li class="global-nav-list-item"><a href="#social" class="global-nav-list-item-link">social</a></li>
-                    <li class="global-nav-list-item"><a href="#games" class="global-nav-list-item-link">games</a></li>
-                    <li class="global-nav-list-item"><a href="#tv-movies" class="global-nav-list-item-link">tv &amp; movies</a></li>
-                    <li class="global-nav-list-item"><a href="#music" class="global-nav-list-item-link">music</a></li>
-                    <li class="global-nav-list-item"><a href="#apps" class="global-nav-list-item-link">apps</a></li>
-                    <li class="global-nav-list-item"><a href="#settings" class="global-nav-list-item-link">settings</a></li>
+                    {{#each nav}}
+                        <li class="global-nav-list-item"><a href="#{{title}}" class="global-nav-list-item-link">{{title}}</a></li>
+                    {{/each}}
                 </ul>
             </nav>
         </header>

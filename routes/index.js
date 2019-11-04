@@ -24,7 +24,7 @@ var page = {
 					catch (err) {
 					  console.error(err)
 					}
-				};
+				}
 			}
 		},
 		{
